@@ -23,7 +23,10 @@ varying mat4 fLightHalfway;
 varying float fShininess;
 varying vec2 fTexCoord;
 varying vec4 fPosition;
-
+//
+uniform float fog_red;
+uniform float fog_green;
+uniform float fog_blue;
 void main()
 {
   vec4 shade = vec4(0.0, 0.0, 0.0, 0.0);     // initialize shade sum
@@ -54,6 +57,6 @@ void main()
     }
   }
   shade.a = 1.0;
-  shade = 0.99*shade + (1.0-0.99)*vec4(fPosition[2], fPosition[2], fPosition[2], fPosition[2]);
+  shade = 0.99*shade + vec4((0.002)*fPosition[2],0, (0.02)*fPosition[2], fPosition[2]);
   gl_FragColor = shade;
 }

@@ -99,6 +99,12 @@ function Scene(canvasID, sceneURL) {
   this.showTextureCheckBoxID = canvasID + "-show-texture";
   this.showTextureCheckBox = document.getElementById(this.showTextureCheckBoxID);
   
+  this.fog_redSliderID = canvasID + "-fog_red-slider";
+  this.fog_redSlider = document.getElementById(this.fog_redSliderID);
+  this.fog_greenSliderID = canvasID + "-fog_green-slider";
+  this.fog_greenSlider = document.getElementById(this.fog_greenSliderID);
+  this.fog_blueSliderID = canvasID + "-fog_blue-slider";
+  this.fog_blueSlider = document.getElementById(this.fog_blueSliderID);
   // Get the initial camera parameters (copy values so we can change them
   // without modifying the jScene object, we might want the original values
   // to do a reset.
@@ -295,6 +301,18 @@ Scene.prototype.ResetCamera = function() {
   
   //console.log("CURRENT VAL:  " + this.scaleSlider.value)
   SliderUpdate(this.scaleSliderID + "-output", this.scaleSlider.value);
+  
+  this.fog_redSlider.max = 0.1;
+  this.fog_redSlider.value = 0.002;
+  SliderUpdate(this.fog_redSliderID + "-output", this.fog_redSlider.value);
+    this.fog_greenSlider.max = 0.1;
+  this.fog_greenSlider.value = 0.001;
+  SliderUpdate(this.fog_greenSliderID + "-output", this.fog_greenSlider.value);
+  this.fog_blueSlider.max = 0.1;
+  this.fog_blueSlider.value = 0.001;
+  SliderUpdate(this.fog_blueSliderID + "-output", this.fog_blueSlider.value);
+  
+  
 
   this.perspectiveCheckBox.checked = this.camera.perspective;
   this.showTextureCheckBox.checked = true;
