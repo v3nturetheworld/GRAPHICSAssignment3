@@ -1,0 +1,127 @@
+{
+  "camera" : {
+    "location" : [ 0.0, 0.0, 10.0 ],
+    "lookAt" : [ 1.0, 0.0, 0.0 ],
+    "approxUp" : [ 0.0, 1.0, 0.0 ],
+    "FOVdeg" : 40.0,
+    "near" : 0.1,
+    "far" : 100.0,
+    "perspective" : true
+  },
+  "bgColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+  "models": [  
+    {"modelURL" : "Moon",
+      "id":0,
+      "location" : [ 2.55, -0.23, -0.6],
+      "parent": 2,
+      "speed": 8,
+      "scale" : [0.005, 0.005, 0.005],
+      "xBasis" : [  1, 0, 0 ],
+      "yBasis" : [  0, 1, 0 ],
+      "zBasis" : [  0, 0, 1 ]
+    },
+    {
+      "modelURL" : "Sun",
+      "id":1,
+      "location" : [ 0.0, 0.0, 0.0 ],
+      "scale" : [1.0, 1.0, 1.0],
+      "xBasis" : [ 1.0, 0.0, 0.0 ],
+      "yBasis" : [ 0.0, 1.0, 0.0 ],
+      "zBasis" : [ 0.0, 0.0, 1.0 ]
+    },
+    {"modelURL" : "Earth",
+      "id":2,
+      "location" : [ 2.6, -0.2, -0.6 ],
+      "parent": 1,
+      "speed": 0.2,
+      "scale" : [0.02, 0.02, 0.02],
+      "xBasis" : [  1, 0, 0 ],
+      "yBasis" : [  0, 1, 0 ],
+      "zBasis" : [  0, 0, 1 ]
+    },
+    {"modelURL" : "mars",
+      "id":3,
+      "location" : [ 2.8, -0.2, 4.6 ],
+      "parent": 1,
+      "speed": 0.4,
+      "scale" : [0.0048, 0.0048, 0.0048],
+      "xBasis" : [  1, 0, 0 ],
+      "yBasis" : [  0, 1, 0 ],
+      "zBasis" : [  0, 0, 1 ]
+    },
+    {"modelURL" : "neptune",
+      "id":4,
+      "location" : [ 10.5, -0.2, -12.6 ],
+      "parent": 1,
+      "speed": 0.5,
+      "scale" : [0.0356, 0.0356, 0.0356],
+      "xBasis" : [  1, 0, 0 ],
+      "yBasis" : [  0, 1, 0 ],
+      "zBasis" : [  0, 0, 1 ]
+    }, 
+    {"modelURL" : "saturn",
+      "id":5,
+      "location" : [ 6.5, -0.2, -4.6 ],
+      "parent": 1,
+      "speed": 0.1,
+      "scale" : [0.025, 0.025, 0.025],
+      "xBasis" : [  1, 0, 0 ],
+      "yBasis" : [  0, 1, 0 ],
+      "zBasis" : [  0, 0, 1 ]
+    }, 
+    {"modelURL" : "mercury",
+      "id":6,
+      "location" : [ 1.05, -0.2, -9.6 ],
+      "parent": 1,
+      "speed": 0.25,
+      "scale" : [0.04, 0.04, 0.04],
+      "xBasis" : [  1, 0, 0 ],
+      "yBasis" : [  0, 1, 0 ],
+      "zBasis" : [  0, 0, 1 ]
+    },
+    {"modelURL" : "uranus",
+      "id":7,
+      "location" : [ 5.75, -0.2, 2.6 ],
+      "parent": 1,
+      "speed": 0.1,
+      "scale" : [0.037, 0.037, 0.037],
+      "xBasis" : [  1, 0, 0 ],
+      "yBasis" : [  0, 1, 0 ],
+      "zBasis" : [  0, 0, 1 ]
+    },
+    {"modelURL" : "venus",
+      "id":8,
+      "location" : [ 2.2, -0.2, -3.6],
+      "parent": 1,
+      "speed": 0.4,
+      "scale" : [0.087, 0.087, 0.087],
+      "xBasis" : [  1, 0, 0 ],
+      "yBasis" : [  0, 1, 0 ],
+      "zBasis" : [  0, 0, 1 ]
+    },
+    {"modelURL" : "jupiter",
+      "id":9,
+      "location" : [ 4.7, -0.2, -6.6 ],
+      "parent": 1,
+      "speed": 0.1,
+      "scale" : [0.1026, 0.1026, 0.1026],
+      "xBasis" : [  1, 0, 0 ],
+      "yBasis" : [  0, 1, 0 ],
+      "zBasis" : [  0, 0, 1 ]
+    }
+  ],
+  "lights" : [
+    {
+      "location" : [ 1.0, 3.0, 4.0 ],
+      "diffuse" : [ 0.6, 0.6, 0.6 ],
+      "ambient" : [ 0.2, 0.2, 0.2 ],
+      "specular" : [ 0.3, 0.3, 0.3 ]
+    },
+    {
+      "location" : [ -4.0, 10.0, 5.0 ],
+      "diffuse" : [ 0.2, 0.2, 0.2 ],
+      "ambient" : [ 0 , 0, 0 ],
+      "specular" : [ 0.2, 0.2, 0.2 ]
+    }
+  ]
+}
