@@ -1,0 +1,36 @@
+{
+  "camera" : {
+    "location" : [ 0.0, 0.0, 15.0 ],
+    "lookAt" : [ 1.0, 0.0, 0.0 ],
+    "approxUp" : [ 0.0, 1.0, 0.0 ],
+    "FOVdeg" : 30.0,
+    "near" : 0.1,
+    "far" : 20.0,
+    "perspective" : true
+  },
+  "bgColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+  "models": [
+   {
+      "modelURL" : "Torus.json",
+      "location" : [ 1.0, 0.0, 0.0 ],
+      "scale" : [ 1.0, 1.0, 1.0 ],
+      "xBasis" : [ 1.0, 0.0, 0.0 ],
+      "yBasis" : [ 0.0, 1.0, 0.0 ],
+      "zBasis" : [ 0.0, 0.0, 1.0 ]
+    }
+  ],
+  "lights" : [
+    {
+      "location" : [ 1.0, 3.0, 4.0 ],
+      "diffuse" : [ 0.6, 0.6, 0.6 ],
+      "ambient" : [ 0.2, 0.2, 0.2 ],
+      "specular" : [ 0.3, 0.3, 0.3 ]
+    },
+    {
+      "location" : [ -4.0, 10.0, 5.0 ],
+      "diffuse" : [ 0.2, 0.2, 0.2 ],
+      "ambient" : [ 0 , 0, 0 ],
+      "specular" : [ 0.2, 0.2, 0.2 ]
+    }
+  ]
+}
